@@ -45,6 +45,10 @@
   color: #e95a08;
 }
 
+.hide-all {
+  display: none;
+}
+
 /* 🟩🟦Nav Bar Styles🟦🟩 */
 .head-part {
   max-width: 80rem;
@@ -83,21 +87,21 @@
 }
 
 /* 🟩🟦Banner Part Styles🟦🟩 */
-main{
-    max-width: 80rem;
+main {
+  max-width: 80rem;
 }
-.banner{
-    width: 71.25rem;
-    height:28.81rem;
-    width: 71rem;
-    height: 29rem;
-    margin: 0 150px;
+.banner {
+  width: 71.25rem;
+  height: 28.81rem;
+  width: 71rem;
+  height: 29rem;
+  margin: 0 150px;
 
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
-.banner-slogan h1{
+.banner-slogan h1 {
   font-size: 4rem;
   font-weight: bold;
   margin-bottom: 0.8rem;
@@ -108,4 +112,77 @@ main{
   color: #00000050;
   width: 36.25rem;
   height: 6.75rem;
+}
+
+/* 📱 Mobile device Responsive Styles */
+@media screen and (max-width: 576px) {
+  /* nav-bar part */
+  .nav-bar-link ul li.hide-mobile {
+    display: none;
+  }
+  .nav-bar {
+    width: auto;
+    margin: auto;
+    padding: 0;
+    justify-content: center;
+  }
+
+  .nav-bar-logo {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  .nav-bar-link {
+    width: 100%;
+    text-align: center;
+  }
+  .nav-bar-link ul {
+    gap: 0;
+    justify-content: center;
+    width: 100%;
+  }
+
+  /* Banner Section Adjustments */
+  main {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .banner {
+    flex-direction: column-reverse;
+    width: 100%;
+    height: auto;
+    margin: 1rem;
+    padding: 1rem;
+    text-align: left;
+  }
+
+  .banner-slogan {
+    margin-top: 1.5rem;
+  }
+
+  .banner-slogan h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .banner-slogan p {
+    width: auto;
+    height: auto;
+    font-size: 1rem;
+    padding: 0 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .banner-img {
+    width: 100%;
+    text-align: center;
+    position: relative;
+  }
+
+  .banner-img img {
+    max-width: 90%;
+    height: auto;
+    position: absolute 5px;
+  }
 }
