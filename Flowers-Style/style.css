@@ -9,7 +9,7 @@
   margin: auto;
 }
 
-img{
+img {
   width: 100%;
 }
 
@@ -50,8 +50,29 @@ img{
   color: #000000;
 }
 
+.color-Regular-Black {
+  color: #111111;
+}
+.color-Black50 {
+  color: #00000050;
+}
+
 .color-Orange {
   color: #e95a08;
+}
+
+.button{
+  background-color: #e95a08;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #ffffff;
+  text-align: center;
+  width: 270px;
+  height: 50px;
+  padding: 20px 50px;
+  margin-top: 1.9rem;
+
+  border: none;
 }
 
 .hide-all {
@@ -67,7 +88,6 @@ img{
   margin: 30px auto 120px auto;
   width: 1140px;
   height: 71px;
-
 }
 
 .nav-bar-link ul {
@@ -119,6 +139,54 @@ img{
   height: 6.75rem;
 }
 
+/* 🟩🟦Our Plants🟦🟩 */
+.our-plants {
+  width: 1140px;
+  height: 1186.85px;
+  margin: auto;
+}
+.plants-add-cart{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 30px;
+  column-gap: 20px;
+}
+.plants-des h2 {
+  font-size: 3.125rem;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 200px;
+}
+
+.plants-des p {
+  font: size 1.375rem;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 13px;
+  margin-bottom: 50px;
+}
+
+.cart-card {
+  width: 16.85rem;
+  height: 29rem;
+  /* background-color: #8987a1;
+  border: #e95a08 2px solid; */
+}
+.card-info {
+  padding-top: 30px;
+
+}
+
+.cart-card h5 {
+  font-size: 1.2rem;
+  font-weight: 400;
+  text-align: center;
+}
+
+.bold {
+  font-weight: bold;
+}
+
 /* 📱 Mobile device Responsive Styles */
 @media screen and (max-width: 576px) {
   /* nav-bar part */
@@ -126,9 +194,7 @@ img{
     display: none;
   }
   .nav-bar {
-    width: auto;
-    margin: auto;
-    padding: 0;
+    width: 90%;
     justify-content: center;
   }
 
@@ -155,7 +221,7 @@ img{
 
   .banner {
     flex-direction: column-reverse;
-    width: 100%;
+    width: 90%;
     height: auto;
     margin: 1rem;
     padding: 1rem;
@@ -172,15 +238,15 @@ img{
   }
 
   .banner-slogan p {
-    width: auto;
-    height: auto;
+    width: 360px;
+    height: 68px;
     font-size: 1rem;
-    padding: 0 1rem;
+
     margin-bottom: 1.5rem;
   }
 
   .banner-img {
-    width: 100%;
+    width: 90%;
     text-align: center;
     position: relative;
   }
