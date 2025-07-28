@@ -61,7 +61,7 @@ img {
   color: #e95a08;
 }
 
-.button{
+.button {
   background-color: #e95a08;
   font-size: 1rem;
   font-weight: 600;
@@ -71,7 +71,6 @@ img {
   height: 50px;
   padding: 20px 50px;
   margin-top: 1.9rem;
-
   border: none;
 }
 
@@ -145,7 +144,7 @@ img {
   height: 1186.85px;
   margin: auto;
 }
-.plants-add-cart{
+.plants-add-cart {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   row-gap: 30px;
@@ -159,7 +158,7 @@ img {
 }
 
 .plants-des p {
-  font: size 1.375rem;
+  font-size: 1.375rem;
   font-weight: 400;
   text-align: center;
   margin-top: 13px;
@@ -174,7 +173,6 @@ img {
 }
 .card-info {
   padding-top: 30px;
-
 }
 
 .cart-card h5 {
@@ -187,6 +185,7 @@ img {
   font-weight: bold;
 }
 
+/* 🚩⭐⭐⭐ */
 /* 📱 Mobile device Responsive Styles */
 @media screen and (max-width: 576px) {
   /* nav-bar part */
@@ -255,5 +254,62 @@ img {
     max-width: 90%;
     height: auto;
     position: absolute 5px;
+  }
+
+  /* Our Plants Adjustment Part */
+  .our-plants {
+    width: 90%;
+    height: auto;
+    margin: auto;
+  }
+  .plants-des h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 6.25rem;
+  }
+
+  .plants-des p {
+    font-size: 1.1rem;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 50px;
+    width: 100%;
+    height: auto;
+  }
+  .plants-add-cart {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    column-gap: 10px;
+    row-gap: 10px;
+  }
+  .cart-card {
+    max-width: 171px;
+  }
+  .button {
+    max-width: 171px;
+    max-height: 50px;
+
+    background-color: #e95a08;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #ffffff;
+    text-align: center;
+
+    padding: 30px 26px;
+    margin-top: 1rem;
+    border: none;
+  }
+  .button:hover {
+    background-color: red;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: bolder;
+    text-transform: capitalize;
+    text-decoration: underline;
+    padding: 28px 26px;
+
   }
 }
