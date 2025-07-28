@@ -1,6 +1,79 @@
-.name-testing{
-    color: green;
-    background-color: yellowgreen;
-    font-size: 45px;
-    font-weight: bolder;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 🟩All fonts🟩 */
+/* inter fonts */
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+.inter-font {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 0;
+  font-style: normal;
+}
+
+/* Noto Serif fonts */
+
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap");
+
+.noto-font {
+  font-family: "Noto Serif", serif;
+  font-optical-sizing: auto;
+  font-weight: 0;
+  font-style: normal;
+}
+
+/* Shared Styles */
+/* 🚩Colors🚩 */
+.color-DarkBlue{
+    color: #252432;
+}
+
+.color-FadeBlue{
+    color: #8987A1;
+}
+
+.color-Black{
+    color: #000000;
+}
+
+.color-Orange{
+    color: #E95A08;
+}
+
+/* 🟩🟦Nav Bar Styles🟦🟩 */
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin : 30px 150px 120px 150px;
+
+}
+
+.nav-bar-link ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
+}
+
+.nav-bar-link a {
+  text-decoration: none;
+}
+
+.home{
+    font-size: 1rem;
+    font-weight: bold;
+}
+.shop-about{
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.cart{
+    font-size: 1rem;
+    font-weight: normal;
 }
