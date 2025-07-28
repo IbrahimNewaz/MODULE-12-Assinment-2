@@ -1,7 +1,16 @@
+/* Common Styles */
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+}
+.container {
+  max-width: 1280px;
+  margin: auto;
+}
+
+img{
+  width: 100%;
 }
 
 /* 🟩All fonts🟩 */
@@ -50,15 +59,15 @@
 }
 
 /* 🟩🟦Nav Bar Styles🟦🟩 */
-.head-part {
-  max-width: 80rem;
-}
+
 .nav-bar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 30px 150px 120px 150px;
-  width: 71.25rem;
+  margin: 30px auto 120px auto;
+  width: 1140px;
+  height: 71px;
+
 }
 
 .nav-bar-link ul {
@@ -87,15 +96,11 @@
 }
 
 /* 🟩🟦Banner Part Styles🟦🟩 */
-main {
-  max-width: 80rem;
-}
+
 .banner {
-  width: 71.25rem;
-  height: 28.81rem;
-  width: 71rem;
-  height: 29rem;
-  margin: 0 150px;
+  width: 1140px;
+  height: 461px;
+  margin: 0 auto;
 
   display: flex;
   justify-content: space-around;
