@@ -185,6 +185,55 @@ img {
   font-weight: bold;
 }
 
+/* 🟩🟦Plant Lover 🟦🟩 */
+.plant-lover {
+  width: 71.25rem;
+  height: 37.31rem;
+  margin-top: 13.125rem;
+}
+
+.plant-lover-banner{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2.2rem;
+}
+
+.plant-lover-img {
+  max-width: 33.75rem;
+  max-height: 37.31rem;
+  position: relative;
+}
+
+.trusted-badge {
+  width: 17rem;
+  height: 17rem;
+  position: absolute;
+  top: -145px;
+  right: -80px;
+}
+.plant-lover-des{
+  width: 33.75rem;
+  height: 32.56rem;
+  margin:0 36px;
+}
+.plant-lover-des h2{
+  font-size: 3.125rem;
+  font-weight: 600;
+  margin-bottom: 1.3rem;
+}
+
+.plant-lover-des ul{
+  font-size: 1.375rem;
+  font-weight: 400;
+  line-height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  row-gap: 2rem;
+
+}
+
 /* 🚩⭐⭐⭐ */
 /* 📱 Mobile device Responsive Styles */
 @media screen and (max-width: 576px) {
@@ -245,15 +294,15 @@ img {
   }
 
   .banner-img {
-    width: 90%;
+    width: 100%;
     text-align: center;
-    position: relative;
+    /* position: relative; */
   }
 
   .banner-img img {
-    max-width: 90%;
+    max-width: 100%;
     height: auto;
-    position: absolute 5px;
+    /* position: absolute 5px; */
   }
 
   /* Our Plants Adjustment Part */
@@ -310,6 +359,5 @@ img {
     text-transform: capitalize;
     text-decoration: underline;
     padding: 28px 26px;
-
   }
 }
