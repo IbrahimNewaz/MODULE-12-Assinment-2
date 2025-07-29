@@ -189,19 +189,20 @@ img {
 .plant-lover {
   width: 71.25rem;
   height: 37.31rem;
+  margin: auto;
   margin-top: 13.125rem;
 }
 
-.plant-lover-banner{
+.plant-lover-banner {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 2.2rem;
+  gap: 3.2rem;
 }
 
 .plant-lover-img {
-  max-width: 33.75rem;
-  max-height: 37.31rem;
+  width: 33.75rem;
+  height: 37.31rem;
   position: relative;
 }
 
@@ -212,31 +213,32 @@ img {
   top: -145px;
   right: -80px;
 }
-.plant-lover-des{
+.plant-lover-des {
   width: 33.75rem;
   height: 32.56rem;
-  margin:0 36px;
+  margin: 0 36px;
 }
-.plant-lover-des h2{
+.plant-lover-des h2 {
   font-size: 3.125rem;
   font-weight: 600;
   margin-bottom: 1.3rem;
 }
 
-.plant-lover-des ul{
+.plant-lover-des ul {
   font-size: 1.375rem;
   font-weight: 400;
-  line-height: auto;
+  width: 90%;
+  /* line-height: auto;
   display: flex;
   flex-direction: column;
-  justify-content: left;
+  justify-content: left; */
   row-gap: 2rem;
-
 }
 
 /* 🚩⭐⭐⭐ */
 /* 📱 Mobile device Responsive Styles */
 @media screen and (max-width: 576px) {
+
   /* nav-bar part */
   .nav-bar-link ul li.hide-mobile {
     display: none;
@@ -312,7 +314,7 @@ img {
     margin: auto;
   }
   .plants-des h2 {
-    font-size: 1.5rem;
+    font-size: 3rem;
     font-weight: 600;
     margin-top: 6.25rem;
   }
@@ -359,5 +361,57 @@ img {
     text-transform: capitalize;
     text-decoration: underline;
     padding: 28px 26px;
+  }
+
+  /*** Plant Love ***/
+  .plant-lover {
+    width: 90%;
+    height: auto;
+    margin: auto;
+  }
+  .plant-lover-banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 13px;
+  }
+  .plant-lover-img {
+    width: 90%;
+    height: auto;
+    padding: 0;
+  }
+
+  .trusted-badge {
+    display: none;
+  }
+
+  .plant-lover-des {
+    width: 90%;
+    height: auto;
+    margin: auto;
+  }
+  .plant-lover-des h2 {
+    font-size: 1.7rem;
+    font-weight: 700;
+    margin-bottom: 1.3rem;
+    margin-top: 1.3rem;
+  }
+
+  .plant-lover-des ul {
+    max-width: 90%;
+    max-height: auto;
+    font-size: 1rem;
+    font-weight: 400;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 1rem;
+    margin-bottom: 151px;
+    padding: 0;
+  }
+  .break {
+    display: none;
   }
 }
