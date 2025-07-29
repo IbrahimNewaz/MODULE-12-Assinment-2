@@ -29,7 +29,7 @@ img {
 @import url("https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap");
 
 .noto-font {
-  font-family: "Noto Serif", serif;
+  font-family: "Noto Serif";
   font-optical-sizing: auto;
   font-weight: 0;
   font-style: normal;
@@ -60,6 +60,9 @@ img {
 .color-Orange {
   color: #e95a08;
 }
+.color-grey{
+  color: #6B7280;
+}
 
 .button {
   background-color: #e95a08;
@@ -72,6 +75,39 @@ img {
   padding: 20px 50px;
   margin-top: 1.9rem;
   border: none;
+  transition: background-color 1.5s, border 0.8s linear;
+}
+.button:hover {
+  background-color: rgb(44, 198, 5);
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  cursor: grab;
+  border: 3px solid darkgreen;
+  border-radius: 10px;
+  padding: 20px 50px;
+}
+.button-footer {
+  background-color: #e95a08;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #ffffff;
+  text-align: center;
+  width: 186px;
+  height: 50px;
+  padding: 20px 50px;
+  border: none;
+  transition: background-color 1s, border 0.8s, text-transform 2s linear;
+}
+.button-footer:hover {
+  background-color: rgb(44, 198, 5);
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  cursor: grab;
+  border: 2px solid darkgreen;
+  border-radius: 10px;
+  padding: 20px 50px;
 }
 
 .hide-all {
@@ -294,6 +330,84 @@ img {
   border-radius: 15px;
 }
 
+/* 🟩🟦The Footer Section🟦🟩 */
+.footer-bg {
+  max-width: 1440px;
+  height: 533px;
+  margin: 120px auto 50px auto;
+  background-image: url(../B12A02-Responsive-Flowers-main/assets/news-letter-bg.png);
+  background-repeat: no-repeat;
+  position: relative;
+}
+.newsletter {
+  position: absolute;
+  top: 45%;
+  right: 22%;
+}
+.newsletter h2 {
+  font-size: 3.125rem;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
+}
+
+.input-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px;
+  gap: 0px;
+}
+
+.input-box input {
+  width: 644px;
+  height: 50px;
+  padding: 20px 8px;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+/* 🟩🟦Footer Contract Link Section 🟦🟩 */
+.contract-link{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-content: center;
+  gap: auto;
+  margin-bottom: 3.2rem;
+}
+.logo-motto img{
+  width: 135px;
+  height: 82px;
+}
+.logo-motto p{
+  font-size: 1.375rem;
+  font-weight: 500;
+  text-align: left;
+  margin-top: 1rem;
+  width:22rem;
+  height:5rem;
+}
+
+.page-link ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  column-gap: 50px;
+}
+.page-link a {
+  text-decoration: none;
+}
+
+.social-media{
+  display: flex;
+  justify-content: space-evenly;
+  gap: 1.5rem;
+}
+
+
+/* ___________________________________________________________________________ */
 /* 🚩⭐⭐⭐ */
 /* 📱 Mobile device Responsive Styles */
 @media screen and (max-width: 576px) {
@@ -524,7 +638,6 @@ img {
     display: flex;
     flex-direction: column;
     gap: 10px;
-
   }
 
   .deals-img {
