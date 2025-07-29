@@ -60,8 +60,8 @@ img {
 .color-Orange {
   color: #e95a08;
 }
-.color-grey{
-  color: #6B7280;
+.color-grey {
+  color: #6b7280;
 }
 
 .button {
@@ -368,7 +368,7 @@ img {
 }
 
 /* 🟩🟦Footer Contract Link Section 🟦🟩 */
-.contract-link{
+.contract-link {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -376,17 +376,17 @@ img {
   gap: auto;
   margin-bottom: 3.2rem;
 }
-.logo-motto img{
+.logo-motto img {
   width: 135px;
   height: 82px;
 }
-.logo-motto p{
+.logo-motto p {
   font-size: 1.375rem;
   font-weight: 500;
   text-align: left;
   margin-top: 1rem;
-  width:22rem;
-  height:5rem;
+  width: 22rem;
+  height: 5rem;
 }
 
 .page-link ul {
@@ -400,12 +400,11 @@ img {
   text-decoration: none;
 }
 
-.social-media{
+.social-media {
   display: flex;
   justify-content: space-evenly;
   gap: 1.5rem;
 }
-
 
 /* ___________________________________________________________________________ */
 /* 🚩⭐⭐⭐ */
@@ -644,4 +643,52 @@ img {
     width: 80%;
     height: auto;
   }
+
+  /*** the footer section ***/
+  .footer-bg {
+    max-width: 90%;
+    height: auto;
+    margin: auto;
+    background-image: url(../B12A02-Responsive-Flowers-main/assets/news-letter-bg.png);
+    background-repeat: no-repeat;
+    position: relative;
+  }
+
+  .newsletter {
+    position: absolute;
+    top: 45%;
+    right: 22%;
+  }
+  .newsletter h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #ffffff;
+    text-align: center;
+  }
+
+  .input-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+    gap: 0px;
+  }
+
+  .input-box input {
+    width: 100%;
+    height: 50%;
+    padding: 16px 8px;
+    font-size: 0.8rem;
+    font-weight: 400;
+  }
+  /* 🟩🟦Footer Contract Link Section 🟦🟩 */
+.contract-link {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-content: center;
+  gap: auto;
+  margin-bottom: 2rem;
+}
 }
